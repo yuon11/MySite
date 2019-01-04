@@ -1,0 +1,54 @@
+<html>
+	
+	<center>
+		<header><h1><b>Welcome to Yuon Flemming's Site</b></h1></header>
+	</center>
+	<div class="container-inner">
+			<div class="banner"><a href=""><img src="path/to/image" alt=""></a>
+	</div>    
+
+    <script type="text/javascript">
+    .container-inner {
+      position: relative;
+    }
+    .banner {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        z-index: 100;
+    }
+
+    @media screen and (max-width: 768px) { .banner { position: static;} }
+	function toggleForm(){
+		var myForm = document.getElementById('formselect');
+		var formValue = myForm[myForm.selectedIndex].value;
+		
+		var linuxForm = document.getElementById('linux_form')
+		var windowsForm = document.getElementById('windows_form')
+		var csvForm = document.getElementById('csv_form')
+
+		if(formValue == "linux_form"){
+			linuxForm.style.display = 'block'
+			windowsForm.style.display = 'none'
+			csvForm.style.display = 'none'
+		}
+		if(formValue == "windows_form"){
+			windowsForm.style.display = 'block'
+			linuxForm.style.display = 'none'
+			csvForm.style.display = 'none'
+		}
+		if(formValue == "csv_form"){
+			csvForm.style.display = 'block'
+			linuxForm.style.display = 'none'
+			windowsForm.style.display = 'none'
+		}
+		if(formValue == ""){
+			csvForm.style.display = 'none'
+			linuxForm.style.display = 'none'
+			windowsForm.style.display = 'none'
+		}
+	}
+	</script>
+
+	&nbsp;&nbsp;
+</html>
