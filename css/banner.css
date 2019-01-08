@@ -1,0 +1,11 @@
+.container-inner {
+    position: center;
+  }
+  .banner {
+      background: url(../img/banner_img.jpg) no-repeat center center fixed;
+      /* -webkit-background-size: cover; */
+      /* -moz-background-size: cover;
+      -o-background-size: cover; */
+      background-size: cover;
+      opacity: 10;
+}
