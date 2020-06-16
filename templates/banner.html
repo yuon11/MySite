@@ -1,57 +1,36 @@
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/overlay.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/body_background.css"/>
+    <link rel="stylesheet" type="text/css" href="css/img_wrap_textbox.css"/>
+    <link rel="import" href="banner.html">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- BANNER SECTION - This will be ablstracted out an imported dynamically in the future -->
-    <center>
-        <div class="container-inner">
-            <div class="banner">
-                <header><h1><b><font color="white">Yuon Flemming's Site</font></b></h1></header>
-            <div class="navbar">
-                <div class="dropdown">
-                    <button class="dropbtn">Home 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="index.html">Home Page</a>
-                    </div>
-                </div> 
-                <div class="dropdown">
-                    <button class="dropbtn">About Me 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="resume_page.html">Resume</a>
-                        <a href="travel_page.html">Travel</a>
-                        <a href="social_media_page.html">Social Media</a>
-                    </div>
-                </div> 
-
-                <div class="dropdown">
-                    <button class="dropbtn">Gaming 
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="gaming_info_page.html">Gaming Info</a>
-                        <a href="gaming_review_page.html">Game Reviews</a>
-                    </div>
-                </div> 
-
-                <!-- <div class="dropdown">
-                        <button class="dropbtn">Dropdown 
-                        <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </div> -->
-            </div>
-        </div> 
+    <nav class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="resume_page.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="social_media_page.html">Contact</a>
+            </li>
+        </ul>
         </div>
-    </center>
-<!-- BANNER SECTION - This will be ablstracted out an imported dynamically in the future --> 
+    </nav>
 </body>

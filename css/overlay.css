@@ -1,0 +1,8 @@
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(167, 221, 255, 0.591);
+  }

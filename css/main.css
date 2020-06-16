@@ -1,0 +1,29 @@
+.header {
+    background-image: url('img/banner_img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .description {
+    left: 50%;
+    position: relative;
+    top: 45%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+  .description h1 {
+    color: #000000;
+  }
+  .description p {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }

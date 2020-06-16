@@ -7,16 +7,18 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	
-	<body  background="img/travel_page_background.jpg">
+	<body background="img/landing_page_background.jpg">
 		<p id="new-projects"></p>
 		<script>$( "#new-projects" ).load( "templates/banner.html" );</script>
 
-		<h1>Travel History</h1>
-		<hr>
-		<p>
-			This main page, and those pages linked from here are collections of different trips and travel stories I've taken in my life.
-			There's no real order to the ordering of the trips I've posted here, each posting is a combination of memory driven accounts,
-			as well as information pulled and formatted from google calendar.
-		</p>
+		<div class="wrapper">
+			<img src="" alt="" class="img-wrap">
+			<p>
+				This page will contain info regarding the various games and platforms I own. 
+				The profile information for each of my gaming profiles will be consolidated here,
+			</p>
+		</div>
+		
 	</body>
 </html>
+<?php?>

@@ -1,10 +1,3 @@
-/* body { 
-    background-image: url('../img/landing_page_background.jpg'), url('../img/landing_page_background2.jpg');
-    background-repeat: no-repeat, repeat;
-    background-attachment: fixed, scroll;
-    background-size: center, cover;
-    background-position: right, top left; 
-  } */
   body { 
     background-image: url('../img/landing_page_background2.jpg');
     background-repeat: repeat;
@@ -15,8 +8,8 @@
 
   .wrapper {
     column-count: 2;
-    column-gap: 50px;
-    padding: 50px;
+    column-gap: 30px;
+    padding: 30px;
   }
   
   p {
@@ -24,14 +17,14 @@
     font-family: Helvetica;
     text-align: justify;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .img-wrap {
     float: left;
     width: 250px;
     shape-outside: url('../img/landing_page_background.jpg');
-    shape-margin:20px;
+    shape-margin: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
