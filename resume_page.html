@@ -4,45 +4,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
+		<link rel="stylesheet" type="text/css" href="css/overlay.css"/>
 		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/body_background.css"/>
 		<link rel="stylesheet" type="text/css" href="css/img_wrap_textbox.css"/>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	</head>
 	
-	<body background="img/resume_background.jpg">
-		<nav class="navbar navbar-expand-md">
-			<a class="navbar-brand" href="#">Logo</a>
-			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="main-navigation">
-			  <ul class="navbar-nav">
-				<li class="nav-item">
-				  <a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="resume_page.html">About</a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link" href="social_media_page.html">Contact</a>
-				</li>
-			  </ul>
-			</div>
-		  </nav>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-		<p id="new-projects"></p>
-		<script>$( "#new-projects" ).load( "templates/banner.html" );</script>
+	<body background="img/resume_background.jpg" >
+		<div id="banner-placeholder">
+		</div>
+		<script>
+		$(function(){
+			$("#banner-placeholder").load("banner.html");
+		});
+		</script>
 
 	
 		<div>
 			<h1>About Me</h1>
 			<hr>
 			<p>Born in Brooklyn in 1993. Raised in Queens, and attended high school in the Bronx at Cardinal Hayes Memorial Highschool for Boys.
-				
+
 			</p>
 		</div>
 
