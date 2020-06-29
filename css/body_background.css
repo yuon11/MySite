@@ -1,7 +1,5 @@
 body { 
-    /* background-image: url('../img/game_review_page_background.jpg'); */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: relative; 
+    background-size: auto auto;
+    background-repeat: repeat;
+    background-position: center; 
   }

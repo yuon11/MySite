@@ -1,5 +1,5 @@
 .header {
-    background-image: url('img/banner_img.jpg');
+    /* background-image: url('img/banner_img.jpg'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -19,6 +19,7 @@
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
     line-height: 1.5;
+    padding-left: 5%;
   }
 
   .center {
@@ -27,3 +28,19 @@
     border: 3px solid green;
     padding: 10px;
   }
+
+  #rcorners1 {
+    border-radius: 25px;
+    background: #cbd3d0;
+    padding: 30px;
+    /* width: 200px; */
+    width: 70%;
+    height: 150px;
+  }
+
+  .description #rcorners1 {
+    position: relative;
+    transform: translate(20%, 0%);
+  }
+
+  p {padding-left: 2%;}
