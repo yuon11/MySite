@@ -3,6 +3,9 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   
   /* Links inside the navbar */
@@ -14,3 +17,27 @@
     padding: 14px 16px;
     text-decoration: none;
   }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
