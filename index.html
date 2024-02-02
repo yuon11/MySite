@@ -3,39 +3,130 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- <link rel="text" type="text/html" href="templates/banner.html"/> -->
 		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
-		<link rel="stylesheet" type="text/css" href="css/overlay.css"/>
 		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<link rel="stylesheet" type="text/css" href="css/body_background.css"/>
 		<link rel="stylesheet" type="text/css" href="css/img_wrap_textbox.css"/>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/parallax.js"></script>
 	</head>
-	
-	<body background="img/shatterproof.jpg">
+
+	<body>
 		<!-- <body background="img/landing_page_background.jpg"></body> -->
-		<div class="overlay">
-			<!--Navigation bar-->
+		<!--Navigation bar-->
+		<header>
 			<div id="banner-placeholder">
 			</div>
-
-			&nbsp;&nbsp;
-			&nbsp;&nbsp;
-			<p class="img-warp">
-				<img src="img/casualsmirk.jpg" class="img-wrap img-fluid img-thumbnail">
-			</p>
-			&nbsp;&nbsp;
-			&nbsp;&nbsp;
-
-			<div class="description">
-				<h1>Welcome to Yuon's Landing Page!</h1>
-				<!-- look into how to add more some feed of updates maybe-->
+			<div class="topnav">	
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="resume_page.html">Resume</a>
+				<!-- <a class="nav-link" href="social_media_page.html">Social</a> -->
+				<a class="nav-link" href="projects_page.html">Hobby Projects</a>
+				<!-- <a class="nav-link" href="gaming_page.html">Gaming</a>	 -->
+			</div>
+			<!-- <div class="navbar a"> -->
+		</header>
+		<!-- <header>
+			<div class="topnav">	
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="resume_page.html">About</a>
+				<a class="nav-link" href="social_media_page.html">Social</a>
+				<a class="nav-link" href="projects_page.html">Projects</a>
+				<a class="nav-link" href="gaming_page.html">Gaming</a>	
+			</div>
+		</header> -->
+		<!-- <div style="
+			height: 100%;
+			background-image: url(img/YuonGraduation.jpg);
+			background-size: cover;
+			"> -->
+		<div class="parallax">
+			<div class="content">
+					<div class="split-screen">
+						<div class="left-side" 
+							style="	background-color: #ecf0f1;
+							background: rgba(0, 0, 0, 0);
+									background-image: url(img/YuonGraduation.jpg);
+									background-position: center;
+									background-repeat: no-repeat;
+									">
+							<!-- Content for the left side -->
+							<!-- <div class="description" >
+								<h1 class="animated-text">Hey, I'm Yuon.</h1>
+							</div> -->
+						</div>
+						<div class="right-side"
+								style="background: rgba(0, 0, 0, 0);">
+							<div class="description" >
+								<h1 class="animated-text" 
+									style="font-size: 100px;
+											position: relative;">Hey, I'm Yuon.</h1>
+								<p>Programmer, Devops Engineer, Gamer, and Nerd.</p>
+								<!-- look into how to add more some feed of updates maybe-->
+							</div>
+						</div>
+					</div>
+				
+					<!-- <hr> makes empty line-->
+					<div class="split-screen">
+						<div class="left-side"
+							style="background-color: #ecf0f1;
+									background: rgba(0, 0, 0, 0);">
+							<div class="description" style="margin-top: -150px;" >
+								<h1>About</h1>
+								<p>
+									Hi, Im Yuon. Im a software and infrastructure engineer from New York. I started programming in 2011 at Wesleyan University where I studied computer science and math. While in college I worked in IT and a start-up (Wheeli) during the summers and graduated in 2015. I started at Cigna as a TECDP programmer and since have held various programming and infrastructure related jobs. In 2022 I earned my MCS at Syracuse Univeristy, and since I have continued to learn and polish my programming and infrastructure knowledge. In my free time Im an avid gamer, amateur game developer and 3D artist.
+								</p>
+							</div>
+							
+						</div>
+						<div class="right-side" 
+							style="background-color:  #ecf0f1;
+									background: rgba(0, 0, 0, 0);
+									background-image: url(img/shatterproof.jpg);
+									background-size: contain;
+									background-repeat: no-repeat;
+									background-position: top;">
+						</div>
+					</div>
 			</div>
 		</div>
-		<div id="footer">
+
+		
+		<!-- <script>
+			var page=1;
+			window.onscroll = function(ev) {
+				if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+					ifrm = document.createElement("IFRAME"); 
+					ifrm.setAttribute("resume_page", page+".html"); 
+					ifrm.style.width = 100+"%"; 
+					ifrm.style.height = 800+"px"; 
+					document.body.appendChild(ifrm); 
+					page++
+				}
+			};
+		</script> -->
+		
+		<!-- <div id="footer">
 			<p>Footer</p>
-		</div>
+		</div> -->
+		<footer class="footer" id="footer" style="z-index: 1;">
+						
+			<p >YuonFlemming@gmail.com</p>
+			<!-- <div >
+				<span class="holder"></span>
+			</div> -->
+			<!-- <ul>
+				<li>
+					<a href="" target="_blank">Facebook</a></li><li><a href="" target="_blank">Twitter</a></li><li><a href="" target="_blank">Instagram</a></li><li><a href="" target="_blank">Youtube</a>
+				</li>
+			</ul>	 -->
+		</footer>
 	</body>
 </html>

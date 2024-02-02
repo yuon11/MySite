@@ -1,14 +1,13 @@
 .container-inner {
     position: center;
   }
-  .banner {
-      background: url(../img/banner_img.jpg) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      opacity: 100;
+.banner {
+    background: url(../img/banner_img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    margin:0;
+    padding:0;
 }
