@@ -1,3 +1,4 @@
 #vscode files
-*.vscode*
-*.vs*
+*.vs
+*.vscode
+*.vs/*
