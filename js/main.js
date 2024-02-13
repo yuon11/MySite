@@ -4,8 +4,8 @@ $(document).ready(function(){
 });
 
 function setBanner() {
-  var element = document.getElementById("banner-placeholder");
   try {
+    var element = document.getElementById("banner-placeholder");
     console.log("Loading banner temps");
     element.load("templates/banner.html");
   }
@@ -13,7 +13,7 @@ function setBanner() {
     console.log("Error hit");
     // $("#banner-placeholder").className = "topnav";  
     // var element = document.getElementById("banner-placeholder");
-    element.classList.add("topnav");
+    // element.classList.add("topnav");
   }
 }
 
@@ -38,6 +38,18 @@ function infiniteScroll() {
 $(document).ready(function(){
   $("#projects-carousel").load("templates/projects_carousel.html");
 });
+
+$(document).ready(function(){
+  $("#donut-projects-carousel").load("templates/donut_projects_carousel.html");
+});
+
+$(document).ready(function(){
+  $("#scifibike-projects-carousel").load("templates/scifibike_projects_carousel.html");
+});
+
+// $(document).ready(function(){
+//   $("#projects-carousel").load("templates/projects_carousel.html");
+// });
 
 // When a user clicks on a button, all <p> elements will be hidden:
 

@@ -1,66 +1,154 @@
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/banner.css"/>
-		<link rel="stylesheet" type="text/css" href="css/overlay.css"/>
-		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<link rel="stylesheet" type="text/css" href="css/img_wrap_textbox.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
-	</head>
-	
-	<body>
-		<div class="overlay">
-			<!--Navigation bar-->
-			<header>
-				<!-- <div id="banner-placeholder">
-				</div> -->
-				<div class="topnav">	
-					<a class="nav-link" href="index.html">Home</a>
-					<a class="nav-link" href="resume_page.html">Resume</a>
-					<a class="nav-link" href="projects_page.html">Hobby Projects</a>
-					<!-- <a class="nav-link" href="social_media_page.html">Social</a> -->
-					<!-- <a class="nav-link" href="gaming_page.html">Gaming</a>	 -->
-				</div>
-			</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/banner.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/test.js"></script>
+    <link rel="stylesheet" href="css/test.css">
+    <title>Yuon's Projects</title>
+</head>
+    <body style="overflow-y: scroll; overflow-x: scroll; height: fit-content;width: fit-content;">
 
-			&nbsp;&nbsp;
-
-			<div>
-				<h1>Projects</h1>
-				<p>This page will explain, catalogue, and describe various personal projects and work projects
-					that I have taken on, completed, or finished. 
-				</p>
+        <header>
+			<div class="topnav">	
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="resume_page.html">Resume</a>
+				<a class="nav-link" href="projects_page.html">Projects</a>
+				<!-- <a class="nav-link" href="social_media_page.html">Social</a> -->
+				<!-- <a class="nav-link" href="gaming_page.html">Gaming</a>	 -->
 			</div>
+			<!-- <div class="navbar a"> -->
+		</header>
 
-			<hr>
-			<h2>Github</h2>
-			<div class="wrapper">
-
-
-				<!-- <img src="img/placeholder.jpg" alt="" class="img-wrap"> -->
-			</div>
-			<hr>
-
-			<h2>Blender</h2>
-			<div class="wrapper">
-				<p>Bootstrap carousel with thumbnails illustrating some shots I've taken of my projects in blender.</p>
-				<div id="projects-carousel"></div>
-			</div>
-			<hr>
-			<!-- <div id="container"></div>	 -->
-			<h2>Unity</h2>
-			<div class="wrapper">
-				<p>Unity is how I use meshes from Blender to make video games.</p>
-				<!-- <div id="projects-carousel"></div> -->
-			</div>
-		</div>
-		<div id="footer">
-			<p>Footer</p>
-		</div>
-	</body>
+        <!-- GITHUB SECTION -->
+        <div style="padding-bottom: 15px;padding-left: 20px; padding-right: 20px;">
+            <!-- Place this in the HTML of your webpage where you want the badge to appear -->   
+            &nbsp;
+            <h3>
+                GitHub
+            </h3>
+            <a href="https://github.com/yuon11/MySite" target="_blank">
+                <img src="https://img.shields.io/github/stars/yuon11/MySite?style=social" alt="GitHub stars">
+            </a>
+        </div>
+        
+        <!-- UNITY SECTION -->
+        <hr>
+        <div class="wrapper" style="padding-bottom: 40px;padding-left: 20px; padding-right: 20px;">
+            <h2>Unity</h2>
+            <ul>
+                <li>
+                    <div>
+                        <h6>JUST PONG</h6>
+                        <img style="height: 50%;width: 50%;" src="img/TestSplash.png">
+                        <p>
+                            Just Pong is an Unity arcade style game that I am developing in my free time. Just Pong will feature single player,
+                            local, and online versus modes. Single player content will include versus against an NPC with easy, medium, hard, and impossible difficulties 
+                            and a challenge mode that will test the players skills in certain scenarios.
+                            The current planned early access release is <b>SUMMER 2024</b>.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- BLENDER SECTION -->
+        <hr>
+        <div class="wrapper" style="padding-bottom: 100px;padding-left: 20px; padding-right: 20px;">
+            <h2>Blender</h2>
+            <ul>
+                <li>
+                    <h6>Blender Guru Donut</h6>
+                    <div >
+                        <div id="donut-projects-carousel"></div>
+                    </div>
+                </li>
+                &nbsp;
+                <li>
+                    <h6>Scifi-Bike</h6>
+                    <div id="scifibike-projects-carousel"></div>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <hr>
+        <!-- VISUALIZATIONS SECTION -->
+        <div style="padding-bottom: 15px;padding-left: 10px; padding-right: 20px;">
+            <h3>
+                JS Visualizations
+            </h3>
+            <h5 style="color: red;">!FLASHY LIGHTS WARNING! USE WITH CAUTION!</h4>
+            <p> Below is a visualization tool made using javascript and ChaptGPT. While exep[erimenting with particles and animations
+                I decided to work this fun little tool onto my webpage for visitors to have fun with.
+                <b>To change the particle count you MUST hit the button to restart the animation. All other properties update in realtime.</b>
+            </p>
+            <div>
+                <button id="toggleButton">Toggle Effect</button>
+                <button id="toggleRandomButton">Randomize Effect</button>
+            </div>
+            &nbsp;
+            <form>
+                <ul>
+                    <li>
+                        <label for="particleInput">Particle Count:</label>
+                        <input value=10 type=number id="particleInput" name="particleInput" required>
+                        <label for="particleSizeInput">Particle Size:</label>
+                        <input value=100 type=number id="particleSizeInput" name="particleSizeInput" required>
+                    </li>
+                    <li>
+                        <label for="redInput">Red Fill:</label>
+                        <input value="255" type=number id="redInput" name="redInput" required>
+                        
+                        <label for="redStrokeInput">Red Stroke:</label>
+                        <input value="255" type=number id="redStrokeInput" name="redStrokeInput" required>
+                    </li>
+                    <li>
+                        <label for="greenInput">Green Fill:</label>
+                        <input value="255" type=number id="greenInput" name="greenInput" required>
+                        <label for="greenStrokeInput">Green Stroke:</label>
+                        <input value="255" type=number id="greenStrokeInput" name="greenStrokeInput" required>
+                    </li>
+                    <li>
+                        <label for="blueInput">Blue Fill:</label>
+                        <input value="255" type=number id="blueInput" name="blueInput" required>
+                        <label for="blueStrokeInput">Blue Stroke:</label>
+                        <input value="255" type=number id="blueStrokeInput" name="blueStrokeInput" required>
+                    </li>
+                </ul>
+            </form>
+            <div >
+                <canvas style="width: 60%;height: 60%;" id="particle-canvas"></canvas>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper" style="padding-bottom: 100px;padding-left: 20px; padding-right: 20px;">
+            <h2>More To Come</h2>
+            <div>
+                <p>Bootstrap carousel with thumbnails illustrating some shots I've taken of my projects in blender.</p>
+                <div></div>
+            </div>
+        </div>
+        
+    </body>
+    <footer class="footer" id="footer" style="z-index: 1;">
+						
+        <p >YuonFlemming@gmail.com</p>
+        <!-- <div >
+            <span class="holder"></span>
+        </div> -->
+        <!-- <ul>
+            <li>
+                <a href="" target="_blank">Facebook</a></li><li><a href="" target="_blank">Twitter</a></li><li><a href="" target="_blank">Instagram</a></li><li><a href="" target="_blank">Youtube</a>
+            </li>
+        </ul>	 -->
+    </footer>
 </html>

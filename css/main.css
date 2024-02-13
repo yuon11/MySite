@@ -22,6 +22,10 @@
     padding-left: 5%;
   }
 
+  #elementId{
+      height: 200px;
+      overflow: scroll;
+  }
   .center {
     margin: auto;
     width: 50%;
@@ -50,6 +54,7 @@
     padding: 10px 10px 0px 10px; 
     bottom: 0; 
     width: 100%; 
+    padding-top: 20px;
     /* Height of the footer*/  
     height: 60px; 
     color: aliceblue;
