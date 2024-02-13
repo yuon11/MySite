@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", function() {
     // Toggle particles on button click
     toggleRandomButton.addEventListener("click", function() {
 
-        const particleInput = getRandomInt(100);
-        console.log("HERE");
+        const particleInput = document.getElementById("particleInput").value;;
+
         particlesEnabled = !particlesEnabled;
 
         if (particlesEnabled) {
@@ -196,48 +196,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
             particles.push(new Particle(x, y, size, speed));
         }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    // Your existing code
-
-    // Initialize Swiper
-    const mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-
-        // If you have images, videos, or a mix, update the slideClass accordingly
-        slideClass: 'swiper-slide',
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // Pagination dots
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-    // Add your images or videos to the Swiper slides
-    const carouselSlides = [
-        '<div class="swiper-slide"><img src="image1.jpg" alt="Image 1"></div>',
-        '<div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>',
-        '<div class="swiper-slide"><video src="video1.mp4" controls></video></div>',
-        // Add more slides as needed
-    ];
-
-    // Append slides to the swiper-wrapper
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
-    swiperWrapper.innerHTML = carouselSlides.join('');
-
-    // Adjust the size of the Swiper container on window resize
-    window.addEventListener("resize", function() {
-        mySwiper.update(); // Trigger Swiper update on window resize
     });
 });
