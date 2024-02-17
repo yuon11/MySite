@@ -198,3 +198,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const repositoriesContainer = document.getElementById("repositories");
+  
+    // Replace 'your-username' with your GitHub username
+    const username = "yuon11";
+  
+    // Fetch repositories using GitHub API
+    fetch(`https://api.github.com/users/${username}/repos`)
+      .then(response => response.json())
+      .then(repositories => {
+        // Display each repository
+        repositories.forEach(repo => {
+          const repoElement = document.createElement("div");
+          repoElement.innerHTML = `<strong>${repo.name}</strong>: ${repo.description}`;
+          repositoriesContainer.appendChild(repoElement);
+        });
+      })
+      .catch(error => {
+        console.error("Error fetching repositories:", error);
+      });
+  });
+  
