@@ -67,3 +67,7 @@
   min-width: fit-content;
   background: rgba(220, 225, 230, 0.714);
 }
+
+#index-page-carousel {
+  transition: background-image 0.5s ease-in-out;
+}

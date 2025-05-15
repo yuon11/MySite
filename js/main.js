@@ -39,6 +39,11 @@ $(document).ready(function(){
   $("#projects-carousel").load("templates/projects_carousel.html");
 });
 
+// $(document).ready(function(){
+//   $("#index-page-carousel").load("templates/index_page_carousel.html");
+// });
+
+
 $(document).ready(function(){
   $("#donut-projects-carousel").load("templates/donut_projects_carousel.html");
 });
@@ -59,3 +64,25 @@ $(document).ready(function(){
     $("p").hide();
   });
 });
+
+// Array of background image URLs
+const images = [
+  'url("img/YuonGraduation.jpg")',
+  'url("img/landing_page_headshot.jpg")'
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+  // Get the target element
+  const box = document.getElementById('index-page-carousel');
+
+  // Update index
+  currentIndex = (currentIndex + 1) % images.length;
+
+  // Set the new background image
+  box.style.backgroundImage = images[currentIndex];
+}
+
+// Start switching images every 20 seconds (20000ms)
+setInterval(changeBackground, 20000);
