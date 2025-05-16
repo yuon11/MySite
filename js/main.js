@@ -114,3 +114,9 @@ function changeAboutBackground() {
 setInterval(changeAboutBackground, 20000);
 
 //<-- END OF CONTROLS INDEX PAGE IMAGES -->
+
+
+//<-- PROJECT CAROUSEL FUNCTIONS -->
+// tab-switcher.js
+
+//<-- ENDPROJECT CAROUSEL FUNCTIONS -->

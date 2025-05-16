@@ -75,3 +75,63 @@
 #index-page-carousel-2 {
   transition: background-image 0.5s ease-in-out;
 }
+
+.carousel-item-content {
+  display: none;
+}
+
+.carousel-item-content.active {
+  display: block;
+}
+
+.tab-layout {
+  display: flex;
+  height: auto; /* Or any desired height */
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px; /* Adjust width as needed */
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+.tab-list li {
+  margin: 0;
+}
+
+.tab-list button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tab-list button:hover,
+.tab-list button.active-tab {
+  background-color: #eee;
+}
+
+.content-container {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  position: relative;
+}
+
+.carousel-item-content {
+  display: none;
+}
+
+.carousel-item-content.active {
+  display: block;
+}
+

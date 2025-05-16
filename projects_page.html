@@ -66,9 +66,27 @@
         
         <!-- BLENDER SECTION -->
         <hr>
-        <div class="wrapper" style="padding-bottom: 100px;padding-left: 20px; padding-right: 20px;">
+        <div class="wrapper" >
             <h2>Blender</h2>
-            <ul>
+
+            <div class="tab-layout">
+            <!-- Scrollable Vertical Tabs -->
+            <ul id="tabs" class="tab-list">
+                <li><button data-target="donut-projects-carousel">Blender Guru Donut</button></li>
+                <li><button data-target="scifibike-projects-carousel">Maglev Concept Bike</button></li>
+                <!-- Add more tabs here -->
+            </ul>
+
+            <!-- Content Area -->
+                      <!-- Content Area -->
+                <div id="carouselContainer" class="content-container">
+                    <div class="carousel-item-content" id="donut-projects-carousel">Content 1</div>
+                    <div class="carousel-item-content" id="scifibike-projects-carousel">Content 2</div>
+                </div>
+            </div>
+            
+
+            <!-- <ul>
                 <li>
                     <h5>Blender Guru Donut</h5>
                     <div >
@@ -80,7 +98,7 @@
                     <h5>Scifi-Bike</h5>
                     <div id="scifibike-projects-carousel"></div>
                 </li>
-            </ul>
+            </ul> -->
             
         </div>
         
@@ -153,3 +171,8 @@
         </ul>	 -->
     </footer>
 </html>
+<script type="module">
+    import { initTabSwitcher } from './js/tab-switcher.js';
+
+    initTabSwitcher('#tabs', '.carousel-item-content');
+</script>
