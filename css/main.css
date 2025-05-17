@@ -99,6 +99,7 @@
   overflow-y: auto;
   border-right: 1px solid #ccc;
   background: #f9f9f9;
+  overflow-x: auto;
 }
 
 .tab-list li {

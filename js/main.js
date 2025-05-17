@@ -36,13 +36,8 @@ function infiniteScroll() {
 // });
 
 $(document).ready(function(){
-  $("#projects-carousel").load("templates/projects_carousel.html");
+  $("#mushroom-valley-carousel").load("templates/mushroom_valley_carousel.html");
 });
-
-// $(document).ready(function(){
-//   $("#index-page-carousel").load("templates/index_page_carousel.html");
-// });
-
 
 $(document).ready(function(){
   $("#donut-projects-carousel").load("templates/donut_projects_carousel.html");
@@ -50,6 +45,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $("#scifibike-projects-carousel").load("templates/scifibike_projects_carousel.html");
+});
+
+$(document).ready(function(){
+  $("#miamivice-car-carousel").load("templates/miamivice_car_carousel.html");
+});
+
+$(document).ready(function(){
+  $("#starship-carousel").load("templates/starship_carousel.html");
 });
 
 // $(document).ready(function(){
