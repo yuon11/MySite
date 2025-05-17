@@ -57,7 +57,7 @@
                             Just Pong is an Unity arcade style game that I am developing in my free time. Just Pong will feature single player,
                             local, and online versus modes. Single player content will include versus against an NPC with easy, medium, hard, and impossible difficulties 
                             and a challenge mode that will test the players skills in certain scenarios.
-                            The current planned early access release is <b>SUMMER 2025</b>.
+                            The current planned early access release is <b>FALL 2025</b>.
                         </p>
                     </div>
                 </li>
@@ -66,9 +66,39 @@
         
         <!-- BLENDER SECTION -->
         <hr>
-        <div class="wrapper" style="padding-bottom: 100px;padding-left: 20px; padding-right: 20px;">
+        <div class="wrapper" style="padding-left: 20px; align-content: center;">
             <h2>Blender</h2>
-            <ul>
+            <p>
+                A collection of images and videos I created and rendered in Blender.
+            </p>
+            <div class="tab-layout">
+            <!-- Scrollable Vertical Tabs -->
+            <ul id="tabs" class="tab-list">
+                <li><button data-target="donut-projects-carousel">Blender Guru Donut</button></li>
+                <li><button data-target="scifibike-projects-carousel">Maglev Concept Bike</button></li>
+                <li><button data-target="mushroom-valley-carousel">Mushroom Valley</button></li>
+                <li><button data-target="miamivice-car-carousel">Miami Vice Car Scene</button></li>
+                <li><button data-target="starship-carousel">Starship</button></li>
+                <li><button data-target="carcrossing-carousel">Car Crossing</button></li>
+                <li><button data-target="miscellaneous-carousel">Miscellaneous</button></li>
+                <!-- Add more tabs here -->
+            </ul>
+
+            <!-- Content Area -->
+                      <!-- Content Area -->
+                <div id="carouselContainer" class="content-container" style="align-content: center;">
+                    <div class="carousel-item-content" id="donut-projects-carousel">Content 1</div>
+                    <div class="carousel-item-content" id="scifibike-projects-carousel">Content 2</div>
+                    <div class="carousel-item-content" id="mushroom-valley-carousel">Content 3</div>
+                    <div class="carousel-item-content" id="miamivice-car-carousel">Content 4</div>
+                    <div class="carousel-item-content" id="starship-carousel">Content 5</div>
+                    <div class="carousel-item-content" id="carcrossing-carousel">Content 6</div>
+                    <div class="carousel-item-content" id="miscellaneous-carousel">Content 7</div>
+                </div>
+            </div>
+            
+
+            <!-- <ul>
                 <li>
                     <h5>Blender Guru Donut</h5>
                     <div >
@@ -80,7 +110,7 @@
                     <h5>Scifi-Bike</h5>
                     <div id="scifibike-projects-carousel"></div>
                 </li>
-            </ul>
+            </ul> -->
             
         </div>
         
@@ -153,3 +183,8 @@
         </ul>	 -->
     </footer>
 </html>
+<script type="module">
+    import { initTabSwitcher } from './js/tab-switcher.js';
+
+    initTabSwitcher('#tabs', '.carousel-item-content');
+</script>

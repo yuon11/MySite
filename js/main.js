@@ -36,7 +36,7 @@ function infiniteScroll() {
 // });
 
 $(document).ready(function(){
-  $("#projects-carousel").load("templates/projects_carousel.html");
+  $("#mushroom-valley-carousel").load("templates/mushroom_valley_carousel.html");
 });
 
 $(document).ready(function(){
@@ -47,10 +47,21 @@ $(document).ready(function(){
   $("#scifibike-projects-carousel").load("templates/scifibike_projects_carousel.html");
 });
 
-// $(document).ready(function(){
-//   $("#projects-carousel").load("templates/projects_carousel.html");
-// });
+$(document).ready(function(){
+  $("#miamivice-car-carousel").load("templates/miamivice_car_carousel.html");
+});
 
+$(document).ready(function(){
+  $("#starship-carousel").load("templates/starship_carousel.html");
+});
+
+$(document).ready(function(){
+  $("#carcrossing-carousel").load("templates/carcrossing_carousel.html");
+});
+
+$(document).ready(function(){
+  $("#miscellaneous-carousel").load("templates/miscellaneous_carousel.html");
+});
 // When a user clicks on a button, all <p> elements will be hidden:
 
 // Example
@@ -59,3 +70,59 @@ $(document).ready(function(){
     $("p").hide();
   });
 });
+
+//<-- CONTROLS INDEX PAGE IMAGES -->
+
+// Array of background image URLs
+const images = [
+  'url("img/YuonGraduation.jpg")',
+  'url("img/landing_page_headshot.jpg")'
+];
+
+let currentIndex = 0;
+
+function changeBackground() {
+  // Get the target element
+  const box = document.getElementById('index-page-carousel');
+
+  // Update index
+  currentIndex = (currentIndex + 1) % images.length;
+
+  // Set the new background image
+  box.style.backgroundImage = images[currentIndex];
+}
+
+// Start switching images every 20 seconds (20000ms)
+setInterval(changeBackground, 20000);
+
+//<-- Second set of images -->
+
+const about_images = [
+  'url("img/shatterproof.jpg")',
+  'url("img/shatterproof2.jpg")',
+  'url("img/shatterproof3.jpg")'
+];
+
+let currentIndex2 = 0;
+
+function changeAboutBackground() {
+  // Get the target element
+  const box = document.getElementById('index-page-carousel-2');
+
+  // Update index
+  currentIndex2 = (currentIndex2 + 1) % about_images.length;
+
+  // Set the new background image
+  box.style.backgroundImage = about_images[currentIndex2];
+}
+
+// Start switching images every 20 seconds (20000ms)
+setInterval(changeAboutBackground, 20000);
+
+//<-- END OF CONTROLS INDEX PAGE IMAGES -->
+
+
+//<-- PROJECT CAROUSEL FUNCTIONS -->
+// tab-switcher.js
+
+//<-- ENDPROJECT CAROUSEL FUNCTIONS -->

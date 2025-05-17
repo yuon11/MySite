@@ -32,13 +32,16 @@
 		<div class="parallax">
 			<div class="content">
 					<div class="split-screen">
-						<div class="left-side" 
-							style="	background-color: #ecf0f1;
-							background: rgba(0, 0, 0, 0);
+						<div id="index-page-carousel"
+							onclick="changeBackground()"
+							class="left-side" 
+							style="	background-color: #f1efec;
+									background: rgba(0, 0, 0, 0);
 									background-image: url(img/YuonGraduation.jpg);
 									background-position: center;
 									background-repeat: no-repeat;
 									">
+									
 							<!-- Content for the left side -->
 							<!-- <div class="description" >
 								<h1 class="animated-text">Hey, I'm Yuon.</h1>
@@ -50,7 +53,7 @@
 								<h1 class="animated-text" 
 									style="font-size: 100px;
 											position: relative;">Hey, I'm Yuon.</h1>
-								<p>Programmer, Devops Engineer, Gamer, and Nerd.</p>
+								<p>Programmer, Engineer, Gamer, and Nerd.</p>
 								<!-- look into how to add more some feed of updates maybe-->
 							</div>
 						</div>
@@ -66,16 +69,20 @@
 								<h1>About</h1>
 								<p id="elementId" style="height: 80%;">
 									Hi, Im Yuon. Im a software and infrastructure engineer from New York. I started programming in 2011 at Wesleyan University where I studied computer science and math. While in college I worked in IT and a start-up (Wheeli) during the summers and graduated in 2015. I started at Cigna as a TECDP programmer and since have held various programming and infrastructure related jobs. In 2022 I earned my MCS at Syracuse Univeristy, and since I have continued to learn and polish my programming and infrastructure knowledge. In my free time Im an avid gamer, amateur game developer and 3D artist.
+									Check out my work on LinkedIn and GitHub!
 								</p>
 							</div>
 						</div>
-						<div class="right-side" 
+						<div id="index-page-carousel-2" 
+							onclick="changeAboutBackground()"
+							class="right-side" 
 							style="background-color:  #ecf0f1;
 									background: rgba(0, 0, 0, 0);
 									background-image: url(img/shatterproof.jpg);
 									background-size: contain;
 									background-repeat: no-repeat;
-									background-position: top;">
+									background-position: top;
+									cursor: pointer;">
 						</div>
 					</div>
 			</div>
