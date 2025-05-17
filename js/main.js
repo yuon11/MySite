@@ -55,10 +55,13 @@ $(document).ready(function(){
   $("#starship-carousel").load("templates/starship_carousel.html");
 });
 
-// $(document).ready(function(){
-//   $("#projects-carousel").load("templates/projects_carousel.html");
-// });
+$(document).ready(function(){
+  $("#carcrossing-carousel").load("templates/carcrossing_carousel.html");
+});
 
+$(document).ready(function(){
+  $("#miscellaneous-carousel").load("templates/miscellaneous_carousel.html");
+});
 // When a user clicks on a button, all <p> elements will be hidden:
 
 // Example
