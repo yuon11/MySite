@@ -76,14 +76,6 @@
   transition: background-image 0.5s ease-in-out;
 }
 
-.carousel-item-content {
-  display: none;
-}
-
-.carousel-item-content.active {
-  display: block;
-}
-
 .tab-layout {
   display: flex;
   height: auto; /* Or any desired height */
@@ -135,3 +127,11 @@
 .carousel-item-content.active {
   display: block;
 }
+
+/* .carousel-item-content {
+  display: none;
+}
+
+.carousel-item-content.active {
+  display: block;
+} */
