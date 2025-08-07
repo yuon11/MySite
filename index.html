@@ -12,6 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<script src="js/main.js"></script>
+		<script src="js/index-page-img-controls.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/parallax.js"></script>
 	</head>
@@ -38,8 +39,10 @@
 							style="	background-color: #f1efec;
 									background: rgba(0, 0, 0, 0);
 									background-image: url(img/YuonGraduation.jpg);
-									background-position: center;
+									background-size: contain;
 									background-repeat: no-repeat;
+									background-position: center;
+									cursor: pointer;
 									">
 									
 							<!-- Content for the left side -->
@@ -60,14 +63,13 @@
 					</div>
 				
 					<hr>
-					&nbsp;
 					<div class="split-screen">
 						<div class="left-side"
 							style="background-color: #ecf0f1;
 									background: rgba(0, 0, 0, 0);">
 							<div class="description" style="margin-top: -150px;" >
 								<h1>About</h1>
-								<p id="elementId" style="height: 80%;">
+								<p id="elementId" style="height: 80%; overflow: auto;">
 									Hi, Im Yuon. Im a software and infrastructure engineer from New York. I started programming in 2011 at Wesleyan University where I studied computer science and math. While in college I worked in IT and a start-up (Wheeli) during the summers and graduated in 2015. I started at Cigna as a TECDP programmer and since have held various programming and infrastructure related jobs. In 2022 I earned my MCS at Syracuse Univeristy, and since I have continued to learn and polish my programming and infrastructure knowledge. In my free time Im an avid gamer, amateur game developer and 3D artist.
 									Check out my work on LinkedIn and GitHub!
 								</p>
@@ -81,7 +83,7 @@
 									background-image: url(img/shatterproof.jpg);
 									background-size: contain;
 									background-repeat: no-repeat;
-									background-position: top;
+									background-position: center;
 									cursor: pointer;">
 						</div>
 					</div>
